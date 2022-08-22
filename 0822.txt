@@ -9,26 +9,26 @@
 6.로그인
 7. git config --global user.name 자신의 git 닉네임
 8. git config --global user.email git 가입시 입력한 이메일
-(gitui로그인)
+(gitbash로그인)
 
 9. git init   
-(gitui초기화)
+(gitbash초기화)
 
 10. git remote add origin https://github.com/BambaStone/sbs0822.git 
-(github의 repository와  gitui 연결) 
+(github의 repository와  gitbash 연결) 
 11. git status
 ( 현재 폴더 내용 확인)
 12. git branch -m master
 (커밋 공간 생성)
 13. git add .
-(현재 폴더 내용 gitui에 적용)
+(현재 폴더 내용 gitbash에 적용)
 14. git commit -m "first commit"
 (add로 추가한 내용을 커밋으로 생성)
 15. git push origin master
 (생성한 커밋을 연결해놓은 github의 repository로 전달 )
 
 파일 변경시 반복->
-16. git add .  //현재 폴더 내의 내용을 git ui에 적용
+16. git add .  //현재 폴더 내의 내용을 git bash에 적용
 17. git commit -m "second"  //적용된 내용의 시간순서이름(커밋) 설정 및 전송 준비
 18. git push origin master   //준비한 커밋 github로 전송
 파일 변경시 반복->
