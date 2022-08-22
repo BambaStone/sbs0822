@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .box{
+            padding: 20px;
+            margin-left: 0;
+            margin-top: 20px;
+        }
+        .btnbox{
+            margin-left: 0;
+            margin-top: 20px;
+        }
+        .box > legend{
+            font-weight: bold;
+        }
+        .tags{
+            font-size: 12px;
+            color: green;
+            font-weight: bold;
+            width: 120px;
+            text-align: right;
+            display: inline-block;
+            margin-bottom: 10px;
+            margin-right: 5px;
+        }
+        .box > input{
+            font-size: 12px;
+        }
+        .box >select{
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>여름방학 특강 신청</h1>
+    <form action="action.php">
+        <fieldset class="box">
+            <legend>수강과목</legend>
+            <label class="tags" for="enge">영어회화(초급)</label>
+            <input type="text" id="enge" value="오전 9:00~11:00"readonly>
+        </fieldset>
+
+        <fieldset class="box">
+            <legend>신청자</legend>
+            <label class="tags" for="names">이름</label>
+            <input type="text" id="names" autofocus required><br>
+            <label class="tags" for="idnum">학번</label>
+            <input type="text" id="idnum" placeholder="하이픈없이 입력"><br>
+            <label class="tags" for="deps">학과</label>
+            <select name="depnames" id="deps">
+                <option value="compu">컴퓨터공학과</option>
+                <option value="gunsul">건설공학과</option>
+                <option value="maths">자연수학과</option>
+            </select><br>
+        </fieldset>
+
+        <fieldset class="box">
+            <legend>교재 주문</legend>
+            <label class="tags" for="books">교재</label>
+            <input type="number" id="books" value="1" min="1" max="10"><br>
+            <label class="tags" for="workseet">워크시트</label>
+            <input type="number" id="workseet" value="1" min="1" max="10"><br>
+            <label class="tags" for="gror">단체주문</label>
+            <input type="number" id="gror" value="10" min="10" max="100" step="10"><br>
+        </fieldset>
+
+        <fieldset class="btnbox">
+            <input type="button" value="신청하기">
+            <input type="button" value="다시쓰기">
+        </fieldset>
+
+    </form>
+</body>
+</html>
