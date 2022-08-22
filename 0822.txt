@@ -16,5 +16,10 @@
 13. git branch -m master
 14. git commit -m "first commit"
 15. git push origin master
+파일 변경시 반복->
+16. git add .
+17. git commit -m "second"
+18. git push origin master
+파일 변경시 반복->
 
-16.( 연결해제시 ) git remote remove origin
+19.( 연결해제시 ) git remote remove origin
